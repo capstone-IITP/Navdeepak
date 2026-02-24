@@ -497,13 +497,33 @@ const ProjectsSection: React.FC<SectionProps> = ({ textEnter, textLeave }) => {
     const projects: Project[] = [
         {
             id: 1,
+            title: "Oscillinx",
+            category: "LLM / SaaS",
+            year: "2025",
+            description: "An advanced Large Language Model (LLM) platform providing powerful natural language processing and intelligent conversational capabilities.",
+            image: "linear-gradient(to bottom right, #1a1a1a, #000)",
+            link: "https://oscillinx.in",
+            preview: "https://i.ibb.co/PZx8xCxX/image.png"
+        },
+        {
+            id: 2,
             title: "DecorMind",
-            category: "E-Commerce / Experience",
-            year: "2024",
+            category: "AI Room Designer / SaaS",
+            year: "2025",
             description: "An immersive furniture discovery platform featuring 3D product configurations and mood-based filtering.",
             image: "linear-gradient(to bottom right, #1a1a1a, #000)",
             link: "https://decormindai.vercel.app",
             preview: "https://i.ibb.co/DgMF4HSg/screencapture-decormindai-vercel-app-2026-01-12-15-15-38.png"
+        },
+        {
+            id: 3,
+            title: "DineStack",
+            category: "Restaurant Management / SaaS",
+            year: "2026",
+            description: "A comprehensive restaurant management platform featuring QR table ordering, real-time analytics, and seamless integration across web and desktop.",
+            image: "linear-gradient(to bottom right, #000, #1a1a1a)",
+            link: "https://dinestack.in",
+            preview: "https://i.ibb.co/67pnn6Sw/image.png"
         },
     ];
 
