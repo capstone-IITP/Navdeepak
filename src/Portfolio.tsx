@@ -306,7 +306,7 @@ const HeroSection: React.FC<SectionProps> = ({ textEnter, textLeave }) => {
                     style={{ y: y1 }}
                 >
                     <span className="block">Full Stack</span>
-                    <span className="block italic ml-[10vw] text-neutral-400">Developer</span>
+                    <span className="block italic ml-[10vw] text-neutral-400">Engineer</span>
                 </motion.h1>
 
                 <motion.div
@@ -317,8 +317,8 @@ const HeroSection: React.FC<SectionProps> = ({ textEnter, textLeave }) => {
                     style={{ y: y2 }}
                 >
                     <p className="font-body text-lg md:text-xl font-light text-neutral-300 leading-relaxed">
-                        Crafting digital experiences where <span className="text-white font-medium">precision</span> meets <span className="font-display italic text-2xl">poetry</span>.
-                        Building the next generation of the web with clean code and cinematic motion.
+                        Engineering scalable systems where <span className="text-white font-medium">architecture</span> meets <span className="font-display italic text-2xl">elegance</span>.
+                        Specializing in Next.js, React Native, APIs, and database-driven applications.
                     </p>
                 </motion.div>
             </div>
@@ -373,7 +373,7 @@ const AboutSection: React.FC<SectionProps> = ({ textEnter, textLeave }) => {
                             <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="transparent" />
                             <text>
                                 <textPath href="#circlePath" fill="currentColor" className="text-[14px] font-body uppercase tracking-widest">
-                                    Design • Development • Interaction • Motion •
+                                    Frontend • Backend • APIs • Mobile •
                                 </textPath>
                             </text>
                         </svg>
@@ -382,7 +382,7 @@ const AboutSection: React.FC<SectionProps> = ({ textEnter, textLeave }) => {
 
                 <div className="md:col-span-8">
                     <AnimatedText
-                        text="I don't just write code; I compose interfaces."
+                        text="I don't just write code; I architect complete systems."
                         className="font-display text-3xl sm:text-4xl md:text-6xl mb-8 md:mb-12 leading-tight"
                         onHover={textEnter}
                         onLeave={textLeave}
@@ -390,10 +390,10 @@ const AboutSection: React.FC<SectionProps> = ({ textEnter, textLeave }) => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 font-body text-neutral-400 font-light leading-relaxed text-sm sm:text-base">
                         <p>
-                            My background blends design sense with solid frontend development. I see the web as a space where structure and creativity work together.
+                            I build end-to-end products — from database schemas and REST APIs to polished interfaces and native mobile apps. Every layer of the stack is an opportunity for precision.
                         </p>
                         <p>
-                            I currently focus on the React ecosystem, paying close attention to clean UI, smooth interactions, accessibility, and performance. Every detail is thoughtfully crafted.
+                            My focus spans React, React Native CLI, Node.js, PostgreSQL, and cloud infrastructure. I design systems that are performant, secure, and built to scale from day one.
                         </p>
                     </div>
                 </div>
@@ -405,28 +405,28 @@ const AboutSection: React.FC<SectionProps> = ({ textEnter, textLeave }) => {
 const CapabilitiesSection: React.FC<SectionProps> = ({ textEnter, textLeave }) => {
     const capabilities = [
         {
-            title: "Semantic HTML",
-            description: "Writing clean, accessible, and SEO-friendly markup"
+            title: "Full Stack Architecture",
+            description: "Designing scalable systems from database to deployment"
         },
         {
-            title: "Modern CSS & Layouts",
-            description: "Responsive layouts using Flexbox, Grid, and Tailwind CSS"
+            title: "Backend Development",
+            description: "Building RESTful APIs and server logic with Node.js & Express"
         },
         {
-            title: "JavaScript Fundamentals",
-            description: "Handling UI logic, DOM manipulation, and basic interactivity"
+            title: "Database Management",
+            description: "Modeling, querying, and optimizing PostgreSQL & MongoDB"
         },
         {
-            title: "Responsive Design",
-            description: "Mobile-first approach across all screen sizes"
+            title: "Frontend Engineering",
+            description: "Crafting performant interfaces with React & Next.js"
         },
         {
-            title: "UI Animations",
-            description: "Smooth hover effects, transitions, and scroll-based animations"
+            title: "Auth & Security",
+            description: "JWT sessions, encryption, role-based access control"
         },
         {
-            title: "Component-Based UI",
-            description: "Reusable UI components using React"
+            title: "App Development",
+            description: "Building cross-platform mobile apps with React Native CLI"
         }
     ];
 
@@ -441,7 +441,7 @@ const CapabilitiesSection: React.FC<SectionProps> = ({ textEnter, textLeave }) =
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
-                    What I build using frontend technologies
+                    What I build across the entire stack
                 </motion.span>
                 <motion.h2
                     className="font-display text-4xl sm:text-5xl md:text-7xl"
@@ -523,6 +523,7 @@ const ProjectsSection: React.FC<SectionProps> = ({ textEnter, textLeave }) => {
                 <h2 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-8xl">Selected Works</h2>
                 <span className="text-xs font-body tracking-[0.2em] uppercase text-neutral-500">03 / Case Studies</span>
             </div>
+            <p className="font-body font-light text-neutral-500 text-sm md:text-base -mt-8 md:-mt-16 mb-12 md:mb-24 max-w-xl">A collection of full stack applications with backend systems and database integration.</p>
 
             <div className="flex flex-col">
                 {isLoading ? (
@@ -648,8 +649,9 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project, setHovered, isHovere
 
 const LearningJourneySection: React.FC<SectionProps> = ({ textEnter, textLeave }) => {
     const timeline = [
-        { year: "2024", role: "Frontend Development", company: "Self-Learning", desc: "Building responsive UIs with HTML, CSS, JavaScript. Working with Next.js. Developing real-world projects like DecorMind and this portfolio." },
-        { year: "2023", role: "Foundations", company: "Learning Phase", desc: "Learned core web development fundamentals. Practiced layouts, responsiveness, and CSS animations. Explored UI/UX principles." },
+        { year: "2025", role: "Full Stack Development", company: "Building Products", desc: "Architecting complete web applications with React, Node.js, and PostgreSQL. Shipping production systems like Oscillinx, DineStack, and this portfolio with backend APIs and database integration." },
+        { year: "2024", role: "Frontend to Full Stack", company: "Self-Learning", desc: "Transitioned from frontend to full stack — learned REST API design, database modeling, authentication systems, and server-side architecture. Built real-world SaaS products end-to-end." },
+        { year: "2023", role: "Foundations", company: "Learning Phase", desc: "Mastered core web fundamentals — HTML, CSS, JavaScript, responsive design. Explored UI/UX principles and began building component-driven interfaces with React." },
     ];
 
     return (
@@ -718,7 +720,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ textEnter, textLeave, b
                     onMouseEnter={textEnter}
                     onMouseLeave={textLeave}
                 >
-                    Let's build something <span className="italic text-neutral-500">meaningful</span> together.
+                    Let's build something <span className="italic text-neutral-500">scalable</span> together.
                 </h2>
             </div>
 
