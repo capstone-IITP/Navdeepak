@@ -143,6 +143,28 @@ const Portfolio: React.FC = () => {
         .animate-spin-slow {
           animation: spin-slow 20s linear infinite;
         }
+
+        /* Lenis Smooth Scroll */
+        html.lenis,
+        html.lenis body {
+          height: auto;
+        }
+
+        .lenis.lenis-smooth {
+          scroll-behavior: auto !important;
+        }
+
+        .lenis.lenis-smooth [data-lenis-prevent] {
+          overscroll-behavior: contain;
+        }
+
+        .lenis.lenis-stopped {
+          overflow: hidden;
+        }
+
+        .lenis.lenis-scrolling iframe {
+          pointer-events: none;
+        }
       `}</style>
 
             {/* --- Noise Overlay --- */}
